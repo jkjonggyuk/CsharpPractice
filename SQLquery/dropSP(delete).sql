@@ -1,0 +1,3 @@
+
+
+drop procedure dbo.spPrizes;
