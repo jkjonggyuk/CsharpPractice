@@ -4,10 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TrackerLibrary
+namespace TrackerLibrary.Models
 {
     public class TeamModel
     {
+        /// <summary>
+        /// Represents Id number of the team
+        /// </summary>
+        public int Id { get; set; }
+
+        /// <summary>
+        /// Represents the name of the team.
+        /// </summary>
+        public string TeamName { get; set; }
+
         /// <summary>
         /// Represents the team members of the team
         /// </summary>
@@ -16,10 +26,5 @@ namespace TrackerLibrary
         /* public TeamModel(){
                 TeamMembers = new List<Person>();               // used to be this way
             }*/
-
-        /// <summary>
-        /// Represents the name of the team.
-        /// </summary>
-        public string TeamName { get; set; }
     }
 }

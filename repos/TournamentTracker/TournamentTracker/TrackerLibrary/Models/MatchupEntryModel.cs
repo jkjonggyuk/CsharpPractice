@@ -4,10 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TrackerLibrary
+namespace TrackerLibrary.Models
 {
     public class MatchupEntryModel
     {
+        /// <summary>
+        /// The unique identifier for the matchup entry.
+        /// </summary>
+        public int Id { get; set; }
+
         /// <summary>                   // Triple 3 Slashes = XML Comment
         /// Represents one team in the matchup.
         /// </summary>

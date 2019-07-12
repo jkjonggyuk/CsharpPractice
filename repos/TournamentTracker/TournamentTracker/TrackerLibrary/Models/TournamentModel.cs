@@ -4,10 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TrackerLibrary
+namespace TrackerLibrary.Models
 {
-    public class Tournament
+    public class TournamentModel
     {
+        /// <summary>
+        /// Unique Identifier for Tournaments
+        /// </summary>
+        public int Id { get; set; }
         /// <summary>
         /// Represents tournament name.
         /// </summary>

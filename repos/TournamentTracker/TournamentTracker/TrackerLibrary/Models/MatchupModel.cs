@@ -4,10 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TrackerLibrary
+namespace TrackerLibrary.Models
 {
     public class MatchupModel
     {
+        /// <summary>
+        /// The unique identifier for the matchup
+        /// </summary>
+        public int Id { get; set; }
         /// <summary>
         /// Represents the entries for this matchup
         /// </summary>
