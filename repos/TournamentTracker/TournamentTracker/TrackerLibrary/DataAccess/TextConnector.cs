@@ -100,7 +100,7 @@ namespace TrackerLibrary.DataAccess
 
             model.Id = currentId;
 
-            model.SaveRoundsToFile(model, MatchupFile, MatchupEntryFile);
+            //model.SaveRoundsToFile(model, MatchupFile, MatchupEntryFile);
 
             tournaments.Add(model);
 
@@ -119,7 +119,16 @@ namespace TrackerLibrary.DataAccess
 
         public List<TournamentModel> GetTournament_All()
         {
+            return TournamentFile
+                .FullFilePath()
+                .LoadFile()
+                .ConvertToTournamentModels(TeamFile, PeopleFile, PrizesFile);
+        }
+
+        public void UpdateMatchup(MatchupModel model)
+        {
             throw new NotImplementedException();
+            // TODO - if needed, #23 54:00
         }
     }
 }

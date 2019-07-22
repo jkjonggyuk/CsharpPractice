@@ -203,7 +203,7 @@ namespace TrackerLibrary.DataAccess.TextHelpers
         public static List<MatchupModel> ConvertToMatchupModels(this List<string> lines)
         {
             List<MatchupModel> output = new List<MatchupModel>();
-
+            /*
             foreach (string line in lines)
             {
                 string[] cols = line.Split(',');
@@ -215,7 +215,7 @@ namespace TrackerLibrary.DataAccess.TextHelpers
                 p.PrizeAmount = decimal.Parse(cols[3]);
                 p.PrizePercentage = double.Parse(cols[4]);
                 output.Add(p);
-            }
+            }*/
 
             return output;
         }

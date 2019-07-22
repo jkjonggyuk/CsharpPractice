@@ -13,6 +13,11 @@ namespace TrackerLibrary.Models
         /// </summary>
         public int Id { get; set; }
 
+        /// <summary>
+        /// The unique identifier for the team.
+        /// </summary>
+        public int TeamCompetingId { get; set; }
+
         /// <summary>                   // Triple 3 Slashes = XML Comment
         /// Represents one team in the matchup.
         /// </summary>
@@ -22,6 +27,11 @@ namespace TrackerLibrary.Models
         /// Represents the score for this particular team.
         /// </summary>
         public double Score { get; set; }
+
+        /// <summary>
+        /// The unique identifier for the parent matchup (team).
+        /// </summary>
+        public int ParentMatchupId { get; set; }
 
         /// <summary>
         /// Represents the matchup that this team came from as the winner.
